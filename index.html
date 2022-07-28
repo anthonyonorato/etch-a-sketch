@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="red-container">
+      <div id="title">Etch-A-Sketch</div>
+      <div id="white-container">
+        <div id="container"></div>
+      </div>
+      <div class="controls">
+        <div class="left-controls">
+          <div id="size-value">16 x 16</div>
+          <input id="size-slider" type="range" value="16" min="16" max="64" />
+        </div>
+        <div class="right-controls">
+          <label for="black">Black</label>
+          <input class="color-choice" id="black" type="radio" value="black" 
+            name="color" checked="checked">
+          <label for="chaos">Chaos</label>
+          <input class="color-choice" id="chaos" type="radio" value="chaos" 
+            name="color">
+        </div>
+      </div>
+      <button id="clear">Shake it!</button>
+    </div>
+    <div class ="footer">
+      <div id="signature">Anthony Onorato © 2022</div>
+      <a href="https://github.com/anthonyonorato">Github</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
