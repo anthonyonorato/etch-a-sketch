@@ -36,3 +36,24 @@ function randomRGB() {
 
   return `rgb(${red},${green},${blue})`;
 }
+
+function checkColor() {
+    if (colorChoice === 'black') {
+      gridItems.forEach((gridItem) =>
+        gridItem.addEventListener('mouseover',
+          e => {
+            e.target.style.backgroundColor = 'black';
+          }
+        )
+      )
+    } else if (colorChoice === 'chaos') {
+      gridItems.forEach((gridItem) =>
+        gridItem.addEventListener('mouseover',
+          e => {
+            e.target.style.backgroundColor = randomRGB();
+          }
+        )
+      )
+    }
+  }
+  
