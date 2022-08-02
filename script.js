@@ -75,7 +75,7 @@ clearButton.onclick = function() {
 sizeSlider.oninput = function() {
   sizeValue.innerText = `${this.value} x ${this.value}`;
   removeAllChildren(container);
-  makeGrid(this.value, this.value, colorChoice);
+  makeGri(this.value, this.value, colorChoice);
 };
 
 
